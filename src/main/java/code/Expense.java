@@ -32,4 +32,16 @@ public class Expense {
     public  String toString() {
         return label + "\t" + amount + "\t" + date;
     }
+
+    protected boolean isReimbursable() {
+        return false;
+    }
+
+    protected boolean isReimbursed() {
+        return false;
+    }
+
+    public boolean isRecurrent() {
+        return false;
+    }
 }
