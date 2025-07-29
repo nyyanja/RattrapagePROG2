@@ -13,4 +13,8 @@ public class RefundableExpense extends Expense {
     public boolean refund() {
         return this.refunded = true;
     }
+
+    public boolean isRefunded() {
+        return this.refunded;
+    }
 }
